@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16D32" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Ingredient_list" representedClassName="Ingredient_list" syncable="YES" codeGenerationType="class">
+        <attribute name="ingredient" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Ingredients" representedClassName="Ingredients" syncable="YES" codeGenerationType="class">
+        <attribute name="iname" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Preferences" representedClassName="Preferences" syncable="YES" codeGenerationType="class">
+        <attribute name="gluten" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="peanut" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="soy" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vegetarian" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Recipes" representedClassName="Recipes" syncable="YES" codeGenerationType="class">
+        <attribute name="rname" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Users" representedClassName="Users" syncable="YES" codeGenerationType="class">
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gluten" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="logIn" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="peanut" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="soy" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="vegetarian" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Ingredient_list" positionX="-54" positionY="0" width="128" height="60"/>
+        <element name="Ingredients" positionX="-63" positionY="-9" width="128" height="60"/>
+        <element name="Preferences" positionX="-54" positionY="36" width="128" height="105"/>
+        <element name="Recipes" positionX="-54" positionY="0" width="128" height="60"/>
+        <element name="Users" positionX="-45" positionY="9" width="128" height="180"/>
+    </elements>
+</model>

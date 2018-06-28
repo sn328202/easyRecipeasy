@@ -1,0 +1,6 @@
+framework module Pods_Easy_Recipeasy_Alpha {
+  umbrella header "Pods-Easy Recipeasy Alpha-umbrella.h"
+
+  export *
+  module * { export * }
+}

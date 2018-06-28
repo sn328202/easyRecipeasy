@@ -1,0 +1,928 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		018C756602AA066B5B5D875D /* Pods_Easy_Recipeasy_AlphaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ACE1F8B7D0B8F86BB8C1641 /* Pods_Easy_Recipeasy_AlphaTests.framework */; };
+		31D0D8ACD31237BF9BA2D714 /* Pods_Easy_Recipeasy_AlphaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039617026549F6D8936E9B49 /* Pods_Easy_Recipeasy_AlphaUITests.framework */; };
+		57D007201EA491D100019B5C /* funcs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D0071F1EA491D100019B5C /* funcs.swift */; };
+		57D007261EA53E6B00019B5C /* RecipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D007251EA53E6B00019B5C /* RecipeDetailViewController.swift */; };
+		57D0073B1EA5A45000019B5C /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D0073A1EA5A45000019B5C /* ReviewViewController.swift */; };
+		57D0073D1EA5A57B00019B5C /* AddReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D0073C1EA5A57B00019B5C /* AddReviewViewController.swift */; };
+		57D0073F1EA5A65600019B5C /* ShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D0073E1EA5A65600019B5C /* ShowViewController.swift */; };
+		57D007411EA5A67D00019B5C /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D007401EA5A67D00019B5C /* SettingsViewController.swift */; };
+		57D007431EA5A69A00019B5C /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D007421EA5A69A00019B5C /* PreferencesViewController.swift */; };
+		7A171DF21E834C680072B25A /* MatchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A171DF11E834C680072B25A /* MatchTableViewController.swift */; };
+		7A4103031E80783A00B0F941 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4103021E80783A00B0F941 /* AppDelegate.swift */; };
+		7A41030A1E80783A00B0F941 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A4103091E80783A00B0F941 /* Assets.xcassets */; };
+		7A41030D1E80783A00B0F941 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A41030B1E80783A00B0F941 /* LaunchScreen.storyboard */; };
+		7A4103181E80783A00B0F941 /* Easy_Recipeasy_AlphaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4103171E80783A00B0F941 /* Easy_Recipeasy_AlphaTests.swift */; };
+		7A4103231E80783A00B0F941 /* Easy_Recipeasy_AlphaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4103221E80783A00B0F941 /* Easy_Recipeasy_AlphaUITests.swift */; };
+		7A4103341E807BBB00B0F941 /* IngredientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4103331E807BBB00B0F941 /* IngredientViewController.swift */; };
+		7A4103381E807F8500B0F941 /* search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4103371E807F8500B0F941 /* search.swift */; };
+		7A497F731EA67C94006B11AF /* AppIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A497F721EA67C94006B11AF /* AppIcon@2x.png */; };
+		7A497F751EA67CDB006B11AF /* AppIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A497F741EA67CDB006B11AF /* AppIcon@3x.png */; };
+		7A4BC77E1EB14DCC008A747F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7A4BC77C1EB14DCB008A747F /* GoogleService-Info.plist */; };
+		7A4BC79B1EB1526C008A747F /* Facebook.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7A4BC79A1EB1526C008A747F /* Facebook.plist */; };
+		7A4BC79E1EB16B5F008A747F /* facebook icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A4BC79D1EB16B5F008A747F /* facebook icon.png */; };
+		7A4FF83A1EBE66210091E08E /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4FF8391EBE66210091E08E /* UploadViewController.swift */; };
+		7A4FF83C1EBE66730091E08E /* IngredientView2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4FF83B1EBE66730091E08E /* IngredientView2Controller.swift */; };
+		7A568FD11E8339D900BBA8F5 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A568FD01E8339D900BBA8F5 /* RegisterViewController.swift */; };
+		7A568FD31E833ABB00BBA8F5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A568FD21E833ABB00BBA8F5 /* LoginViewController.swift */; };
+		7A652C1B1E842B0800843DEF /* Chef Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A652C1A1E842B0800843DEF /* Chef Icon.png */; };
+		7A652C201E842D8900843DEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A652C1E1E842D8900843DEF /* Main.storyboard */; };
+		7A652C261E84456300843DEF /* faded fruit.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A652C251E84456300843DEF /* faded fruit.png */; };
+		7A9493641EB12E5D006680D0 /* Picnic Blanket.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A9493631EB12E5D006680D0 /* Picnic Blanket.png */; };
+		7A9D65241EBE4DAB0057086E /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9D65231EBE4DAB0057086E /* WebViewController.swift */; };
+		7A9D652B1EBE4E4E0057086E /* batali.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7A9D65251EBE4E4E0057086E /* batali.jpg */; };
+		7A9D652C1EBE4E4E0057086E /* flay.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7A9D65261EBE4E4E0057086E /* flay.jpg */; };
+		7A9D652D1EBE4E4E0057086E /* giada.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7A9D65271EBE4E4E0057086E /* giada.jpg */; };
+		7A9D652E1EBE4E4E0057086E /* puck.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7A9D65281EBE4E4E0057086E /* puck.jpg */; };
+		7A9D652F1EBE4E4E0057086E /* ramsay.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7A9D65291EBE4E4E0057086E /* ramsay.jpg */; };
+		7A9D65301EBE4E4E0057086E /* ray.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7A9D652A1EBE4E4E0057086E /* ray.jpg */; };
+		7AC59DB01EA5AA420036E3BF /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC59DAF1EA5AA420036E3BF /* TableViewCell.swift */; };
+		7AC605B11EA5ACB900492102 /* Ingredients.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7AC605AF1EA5ACB900492102 /* Ingredients.xcdatamodeld */; };
+		7AC605B41EA5ACDE00492102 /* Settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AC605B21EA5ACDE00492102 /* Settings.png */; };
+		7AC605B51EA5ACDE00492102 /* Easy ReciPeasy.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AC605B31EA5ACDE00492102 /* Easy ReciPeasy.png */; };
+		E8661D5B9DBEF4C11C7DBCFF /* Pods_Easy_Recipeasy_Alpha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB19A34402CDDD0B7CFF7784 /* Pods_Easy_Recipeasy_Alpha.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7A4103141E80783A00B0F941 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A4102F71E80783900B0F941 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A4102FE1E80783900B0F941;
+			remoteInfo = "Easy Recipeasy Alpha";
+		};
+		7A41031F1E80783A00B0F941 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7A4102F71E80783900B0F941 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A4102FE1E80783900B0F941;
+			remoteInfo = "Easy Recipeasy Alpha";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		039617026549F6D8936E9B49 /* Pods_Easy_Recipeasy_AlphaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Easy_Recipeasy_AlphaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		280A3B5950D8551B2B5DCAEE /* Pods-Easy Recipeasy Alpha.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easy Recipeasy Alpha.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Easy Recipeasy Alpha/Pods-Easy Recipeasy Alpha.debug.xcconfig"; sourceTree = "<group>"; };
+		4ACE1F8B7D0B8F86BB8C1641 /* Pods_Easy_Recipeasy_AlphaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Easy_Recipeasy_AlphaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57D0071F1EA491D100019B5C /* funcs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = funcs.swift; sourceTree = "<group>"; };
+		57D007251EA53E6B00019B5C /* RecipeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewController.swift; sourceTree = "<group>"; };
+		57D0073A1EA5A45000019B5C /* ReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
+		57D0073C1EA5A57B00019B5C /* AddReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddReviewViewController.swift; sourceTree = "<group>"; };
+		57D0073E1EA5A65600019B5C /* ShowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowViewController.swift; sourceTree = "<group>"; };
+		57D007401EA5A67D00019B5C /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		57D007421EA5A69A00019B5C /* PreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
+		768560B826ABF83352231772 /* Pods-Easy Recipeasy AlphaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easy Recipeasy AlphaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Easy Recipeasy AlphaUITests/Pods-Easy Recipeasy AlphaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7A171DF11E834C680072B25A /* MatchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchTableViewController.swift; sourceTree = "<group>"; };
+		7A4102FF1E80783900B0F941 /* Easy Recipeasy Alpha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Easy Recipeasy Alpha.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A4103021E80783A00B0F941 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7A4103091E80783A00B0F941 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7A41030C1E80783A00B0F941 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7A4103131E80783A00B0F941 /* Easy Recipeasy AlphaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Easy Recipeasy AlphaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A4103171E80783A00B0F941 /* Easy_Recipeasy_AlphaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Easy_Recipeasy_AlphaTests.swift; sourceTree = "<group>"; };
+		7A4103191E80783A00B0F941 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A41031E1E80783A00B0F941 /* Easy Recipeasy AlphaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Easy Recipeasy AlphaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A4103221E80783A00B0F941 /* Easy_Recipeasy_AlphaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Easy_Recipeasy_AlphaUITests.swift; sourceTree = "<group>"; };
+		7A4103241E80783A00B0F941 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A4103331E807BBB00B0F941 /* IngredientViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientViewController.swift; sourceTree = "<group>"; };
+		7A4103371E807F8500B0F941 /* search.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = search.swift; sourceTree = "<group>"; };
+		7A497F721EA67C94006B11AF /* AppIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon@2x.png"; sourceTree = "<group>"; };
+		7A497F741EA67CDB006B11AF /* AppIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon@3x.png"; sourceTree = "<group>"; };
+		7A4BC77C1EB14DCB008A747F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7A4BC77D1EB14DCC008A747F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A4BC79A1EB1526C008A747F /* Facebook.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Facebook.plist; sourceTree = "<group>"; };
+		7A4BC79D1EB16B5F008A747F /* facebook icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebook icon.png"; sourceTree = "<group>"; };
+		7A4FF8391EBE66210091E08E /* UploadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
+		7A4FF83B1EBE66730091E08E /* IngredientView2Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientView2Controller.swift; sourceTree = "<group>"; };
+		7A568FD01E8339D900BBA8F5 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		7A568FD21E833ABB00BBA8F5 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7A652C1A1E842B0800843DEF /* Chef Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Chef Icon.png"; sourceTree = "<group>"; };
+		7A652C1F1E842D8900843DEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7A652C251E84456300843DEF /* faded fruit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "faded fruit.png"; sourceTree = "<group>"; };
+		7A9493631EB12E5D006680D0 /* Picnic Blanket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Picnic Blanket.png"; sourceTree = "<group>"; };
+		7A9D65231EBE4DAB0057086E /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		7A9D65251EBE4E4E0057086E /* batali.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = batali.jpg; sourceTree = "<group>"; };
+		7A9D65261EBE4E4E0057086E /* flay.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = flay.jpg; sourceTree = "<group>"; };
+		7A9D65271EBE4E4E0057086E /* giada.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = giada.jpg; sourceTree = "<group>"; };
+		7A9D65281EBE4E4E0057086E /* puck.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = puck.jpg; sourceTree = "<group>"; };
+		7A9D65291EBE4E4E0057086E /* ramsay.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ramsay.jpg; sourceTree = "<group>"; };
+		7A9D652A1EBE4E4E0057086E /* ray.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ray.jpg; sourceTree = "<group>"; };
+		7AC59DAF1EA5AA420036E3BF /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		7AC605B01EA5ACB900492102 /* Ingredients.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Ingredients.xcdatamodel; sourceTree = "<group>"; };
+		7AC605B21EA5ACDE00492102 /* Settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Settings.png; sourceTree = "<group>"; };
+		7AC605B31EA5ACDE00492102 /* Easy ReciPeasy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Easy ReciPeasy.png"; sourceTree = "<group>"; };
+		9FBA97C99791FB2571B275E8 /* Pods-Easy Recipeasy Alpha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easy Recipeasy Alpha.release.xcconfig"; path = "Pods/Target Support Files/Pods-Easy Recipeasy Alpha/Pods-Easy Recipeasy Alpha.release.xcconfig"; sourceTree = "<group>"; };
+		BF0CB39DD5B4A6A64F702274 /* Pods-Easy Recipeasy AlphaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easy Recipeasy AlphaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Easy Recipeasy AlphaTests/Pods-Easy Recipeasy AlphaTests.release.xcconfig"; sourceTree = "<group>"; };
+		E0E1AD5B530503EB7D386815 /* Pods-Easy Recipeasy AlphaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easy Recipeasy AlphaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Easy Recipeasy AlphaTests/Pods-Easy Recipeasy AlphaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FAB7BEA5CE303F9B4B39FA2C /* Pods-Easy Recipeasy AlphaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easy Recipeasy AlphaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Easy Recipeasy AlphaUITests/Pods-Easy Recipeasy AlphaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FB19A34402CDDD0B7CFF7784 /* Pods_Easy_Recipeasy_Alpha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Easy_Recipeasy_Alpha.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7A4102FC1E80783900B0F941 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8661D5B9DBEF4C11C7DBCFF /* Pods_Easy_Recipeasy_Alpha.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A4103101E80783A00B0F941 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				018C756602AA066B5B5D875D /* Pods_Easy_Recipeasy_AlphaTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A41031B1E80783A00B0F941 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31D0D8ACD31237BF9BA2D714 /* Pods_Easy_Recipeasy_AlphaUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		67FD428584FD8A94413379F2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				280A3B5950D8551B2B5DCAEE /* Pods-Easy Recipeasy Alpha.debug.xcconfig */,
+				9FBA97C99791FB2571B275E8 /* Pods-Easy Recipeasy Alpha.release.xcconfig */,
+				E0E1AD5B530503EB7D386815 /* Pods-Easy Recipeasy AlphaTests.debug.xcconfig */,
+				BF0CB39DD5B4A6A64F702274 /* Pods-Easy Recipeasy AlphaTests.release.xcconfig */,
+				768560B826ABF83352231772 /* Pods-Easy Recipeasy AlphaUITests.debug.xcconfig */,
+				FAB7BEA5CE303F9B4B39FA2C /* Pods-Easy Recipeasy AlphaUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7A36919A1EB7FE5300F8962D /* Pictures */ = {
+			isa = PBXGroup;
+			children = (
+				7A9D65251EBE4E4E0057086E /* batali.jpg */,
+				7A9D65261EBE4E4E0057086E /* flay.jpg */,
+				7A9D65271EBE4E4E0057086E /* giada.jpg */,
+				7A9D65281EBE4E4E0057086E /* puck.jpg */,
+				7A9D65291EBE4E4E0057086E /* ramsay.jpg */,
+				7A9D652A1EBE4E4E0057086E /* ray.jpg */,
+				7A4BC79D1EB16B5F008A747F /* facebook icon.png */,
+				7A497F741EA67CDB006B11AF /* AppIcon@3x.png */,
+				7A497F721EA67C94006B11AF /* AppIcon@2x.png */,
+				7AC605B21EA5ACDE00492102 /* Settings.png */,
+				7AC605B31EA5ACDE00492102 /* Easy ReciPeasy.png */,
+				7A652C251E84456300843DEF /* faded fruit.png */,
+				7A9493631EB12E5D006680D0 /* Picnic Blanket.png */,
+				7A652C1A1E842B0800843DEF /* Chef Icon.png */,
+			);
+			name = Pictures;
+			sourceTree = "<group>";
+		};
+		7A4102F61E80783900B0F941 = {
+			isa = PBXGroup;
+			children = (
+				7A4103011E80783A00B0F941 /* Easy Recipeasy Alpha */,
+				7A4103161E80783A00B0F941 /* Easy Recipeasy AlphaTests */,
+				7A4103211E80783A00B0F941 /* Easy Recipeasy AlphaUITests */,
+				7A4103001E80783900B0F941 /* Products */,
+				67FD428584FD8A94413379F2 /* Pods */,
+				B62201933BE87F8049A9C0CA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7A4103001E80783900B0F941 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A4102FF1E80783900B0F941 /* Easy Recipeasy Alpha.app */,
+				7A4103131E80783A00B0F941 /* Easy Recipeasy AlphaTests.xctest */,
+				7A41031E1E80783A00B0F941 /* Easy Recipeasy AlphaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7A4103011E80783A00B0F941 /* Easy Recipeasy Alpha */ = {
+			isa = PBXGroup;
+			children = (
+				7A36919A1EB7FE5300F8962D /* Pictures */,
+				7A652C1E1E842D8900843DEF /* Main.storyboard */,
+				7A9D65231EBE4DAB0057086E /* WebViewController.swift */,
+				7A4103021E80783A00B0F941 /* AppDelegate.swift */,
+				7A41030B1E80783A00B0F941 /* LaunchScreen.storyboard */,
+				7A4103331E807BBB00B0F941 /* IngredientViewController.swift */,
+				7A4FF83B1EBE66730091E08E /* IngredientView2Controller.swift */,
+				7A4FF8391EBE66210091E08E /* UploadViewController.swift */,
+				7A171DF11E834C680072B25A /* MatchTableViewController.swift */,
+				57D007251EA53E6B00019B5C /* RecipeDetailViewController.swift */,
+				7A568FD01E8339D900BBA8F5 /* RegisterViewController.swift */,
+				7A568FD21E833ABB00BBA8F5 /* LoginViewController.swift */,
+				57D0073A1EA5A45000019B5C /* ReviewViewController.swift */,
+				57D0073C1EA5A57B00019B5C /* AddReviewViewController.swift */,
+				57D0073E1EA5A65600019B5C /* ShowViewController.swift */,
+				57D007401EA5A67D00019B5C /* SettingsViewController.swift */,
+				57D007421EA5A69A00019B5C /* PreferencesViewController.swift */,
+				7AC59DAF1EA5AA420036E3BF /* TableViewCell.swift */,
+				57D0071F1EA491D100019B5C /* funcs.swift */,
+				7A4103371E807F8500B0F941 /* search.swift */,
+				7A4BC79A1EB1526C008A747F /* Facebook.plist */,
+				7AC605AF1EA5ACB900492102 /* Ingredients.xcdatamodeld */,
+				7A4BC77C1EB14DCB008A747F /* GoogleService-Info.plist */,
+				7A4BC77D1EB14DCC008A747F /* Info.plist */,
+				7A4103091E80783A00B0F941 /* Assets.xcassets */,
+			);
+			path = "Easy Recipeasy Alpha";
+			sourceTree = "<group>";
+		};
+		7A4103161E80783A00B0F941 /* Easy Recipeasy AlphaTests */ = {
+			isa = PBXGroup;
+			children = (
+				7A4103171E80783A00B0F941 /* Easy_Recipeasy_AlphaTests.swift */,
+				7A4103191E80783A00B0F941 /* Info.plist */,
+			);
+			path = "Easy Recipeasy AlphaTests";
+			sourceTree = "<group>";
+		};
+		7A4103211E80783A00B0F941 /* Easy Recipeasy AlphaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7A4103221E80783A00B0F941 /* Easy_Recipeasy_AlphaUITests.swift */,
+				7A4103241E80783A00B0F941 /* Info.plist */,
+			);
+			path = "Easy Recipeasy AlphaUITests";
+			sourceTree = "<group>";
+		};
+		B62201933BE87F8049A9C0CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB19A34402CDDD0B7CFF7784 /* Pods_Easy_Recipeasy_Alpha.framework */,
+				4ACE1F8B7D0B8F86BB8C1641 /* Pods_Easy_Recipeasy_AlphaTests.framework */,
+				039617026549F6D8936E9B49 /* Pods_Easy_Recipeasy_AlphaUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7A4102FE1E80783900B0F941 /* Easy Recipeasy Alpha */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A4103271E80783A00B0F941 /* Build configuration list for PBXNativeTarget "Easy Recipeasy Alpha" */;
+			buildPhases = (
+				258A4A985656E051FDE0E584 /* [CP] Check Pods Manifest.lock */,
+				7A4102FB1E80783900B0F941 /* Sources */,
+				7A4102FC1E80783900B0F941 /* Frameworks */,
+				7A4102FD1E80783900B0F941 /* Resources */,
+				119932CA0EF321A4CF9D6830 /* [CP] Embed Pods Frameworks */,
+				1D061875C73759CD79BF1225 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Easy Recipeasy Alpha";
+			productName = "Easy Recipeasy Alpha";
+			productReference = 7A4102FF1E80783900B0F941 /* Easy Recipeasy Alpha.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7A4103121E80783A00B0F941 /* Easy Recipeasy AlphaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A41032A1E80783A00B0F941 /* Build configuration list for PBXNativeTarget "Easy Recipeasy AlphaTests" */;
+			buildPhases = (
+				089F73F02ADDCBB17D7CA6D7 /* [CP] Check Pods Manifest.lock */,
+				7A41030F1E80783A00B0F941 /* Sources */,
+				7A4103101E80783A00B0F941 /* Frameworks */,
+				7A4103111E80783A00B0F941 /* Resources */,
+				9196E7B3CE0AAAB4A8DF4327 /* [CP] Embed Pods Frameworks */,
+				CCE17B365E14DD0A0D0C0938 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A4103151E80783A00B0F941 /* PBXTargetDependency */,
+			);
+			name = "Easy Recipeasy AlphaTests";
+			productName = "Easy Recipeasy AlphaTests";
+			productReference = 7A4103131E80783A00B0F941 /* Easy Recipeasy AlphaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7A41031D1E80783A00B0F941 /* Easy Recipeasy AlphaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A41032D1E80783A00B0F941 /* Build configuration list for PBXNativeTarget "Easy Recipeasy AlphaUITests" */;
+			buildPhases = (
+				AE67BC51502A326B54C0B05A /* [CP] Check Pods Manifest.lock */,
+				7A41031A1E80783A00B0F941 /* Sources */,
+				7A41031B1E80783A00B0F941 /* Frameworks */,
+				7A41031C1E80783A00B0F941 /* Resources */,
+				9584C47E45BC33B7DDE139D7 /* [CP] Embed Pods Frameworks */,
+				5E950C3248C13265E25A9DB7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A4103201E80783A00B0F941 /* PBXTargetDependency */,
+			);
+			name = "Easy Recipeasy AlphaUITests";
+			productName = "Easy Recipeasy AlphaUITests";
+			productReference = 7A41031E1E80783A00B0F941 /* Easy Recipeasy AlphaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7A4102F71E80783900B0F941 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Neha Sule";
+				TargetAttributes = {
+					7A4102FE1E80783900B0F941 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 982L5Q3UPX;
+						ProvisioningStyle = Automatic;
+					};
+					7A4103121E80783A00B0F941 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 982L5Q3UPX;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7A4102FE1E80783900B0F941;
+					};
+					7A41031D1E80783A00B0F941 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 982L5Q3UPX;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7A4102FE1E80783900B0F941;
+					};
+				};
+			};
+			buildConfigurationList = 7A4102FA1E80783900B0F941 /* Build configuration list for PBXProject "Easy Recipeasy Alpha" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7A4102F61E80783900B0F941;
+			productRefGroup = 7A4103001E80783900B0F941 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7A4102FE1E80783900B0F941 /* Easy Recipeasy Alpha */,
+				7A4103121E80783A00B0F941 /* Easy Recipeasy AlphaTests */,
+				7A41031D1E80783A00B0F941 /* Easy Recipeasy AlphaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7A4102FD1E80783900B0F941 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AC605B41EA5ACDE00492102 /* Settings.png in Resources */,
+				7A9D652C1EBE4E4E0057086E /* flay.jpg in Resources */,
+				7A497F751EA67CDB006B11AF /* AppIcon@3x.png in Resources */,
+				7A4BC79B1EB1526C008A747F /* Facebook.plist in Resources */,
+				7A652C261E84456300843DEF /* faded fruit.png in Resources */,
+				7A652C201E842D8900843DEF /* Main.storyboard in Resources */,
+				7A9D652F1EBE4E4E0057086E /* ramsay.jpg in Resources */,
+				7A652C1B1E842B0800843DEF /* Chef Icon.png in Resources */,
+				7A4BC77E1EB14DCC008A747F /* GoogleService-Info.plist in Resources */,
+				7AC605B51EA5ACDE00492102 /* Easy ReciPeasy.png in Resources */,
+				7A9493641EB12E5D006680D0 /* Picnic Blanket.png in Resources */,
+				7A9D652E1EBE4E4E0057086E /* puck.jpg in Resources */,
+				7A9D65301EBE4E4E0057086E /* ray.jpg in Resources */,
+				7A41030D1E80783A00B0F941 /* LaunchScreen.storyboard in Resources */,
+				7A4BC79E1EB16B5F008A747F /* facebook icon.png in Resources */,
+				7A497F731EA67C94006B11AF /* AppIcon@2x.png in Resources */,
+				7A9D652B1EBE4E4E0057086E /* batali.jpg in Resources */,
+				7A9D652D1EBE4E4E0057086E /* giada.jpg in Resources */,
+				7A41030A1E80783A00B0F941 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A4103111E80783A00B0F941 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A41031C1E80783A00B0F941 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		089F73F02ADDCBB17D7CA6D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		119932CA0EF321A4CF9D6830 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Easy Recipeasy Alpha/Pods-Easy Recipeasy Alpha-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1D061875C73759CD79BF1225 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Easy Recipeasy Alpha/Pods-Easy Recipeasy Alpha-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		258A4A985656E051FDE0E584 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5E950C3248C13265E25A9DB7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Easy Recipeasy AlphaUITests/Pods-Easy Recipeasy AlphaUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9196E7B3CE0AAAB4A8DF4327 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Easy Recipeasy AlphaTests/Pods-Easy Recipeasy AlphaTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9584C47E45BC33B7DDE139D7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Easy Recipeasy AlphaUITests/Pods-Easy Recipeasy AlphaUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE67BC51502A326B54C0B05A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CCE17B365E14DD0A0D0C0938 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Easy Recipeasy AlphaTests/Pods-Easy Recipeasy AlphaTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7A4102FB1E80783900B0F941 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A568FD31E833ABB00BBA8F5 /* LoginViewController.swift in Sources */,
+				7AC59DB01EA5AA420036E3BF /* TableViewCell.swift in Sources */,
+				57D007261EA53E6B00019B5C /* RecipeDetailViewController.swift in Sources */,
+				57D0073B1EA5A45000019B5C /* ReviewViewController.swift in Sources */,
+				7AC605B11EA5ACB900492102 /* Ingredients.xcdatamodeld in Sources */,
+				57D0073D1EA5A57B00019B5C /* AddReviewViewController.swift in Sources */,
+				7A4103341E807BBB00B0F941 /* IngredientViewController.swift in Sources */,
+				57D007431EA5A69A00019B5C /* PreferencesViewController.swift in Sources */,
+				57D0073F1EA5A65600019B5C /* ShowViewController.swift in Sources */,
+				7A4103381E807F8500B0F941 /* search.swift in Sources */,
+				57D007411EA5A67D00019B5C /* SettingsViewController.swift in Sources */,
+				7A568FD11E8339D900BBA8F5 /* RegisterViewController.swift in Sources */,
+				7A9D65241EBE4DAB0057086E /* WebViewController.swift in Sources */,
+				7A4FF83A1EBE66210091E08E /* UploadViewController.swift in Sources */,
+				7A171DF21E834C680072B25A /* MatchTableViewController.swift in Sources */,
+				57D007201EA491D100019B5C /* funcs.swift in Sources */,
+				7A4FF83C1EBE66730091E08E /* IngredientView2Controller.swift in Sources */,
+				7A4103031E80783A00B0F941 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A41030F1E80783A00B0F941 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A4103181E80783A00B0F941 /* Easy_Recipeasy_AlphaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A41031A1E80783A00B0F941 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A4103231E80783A00B0F941 /* Easy_Recipeasy_AlphaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7A4103151E80783A00B0F941 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7A4102FE1E80783900B0F941 /* Easy Recipeasy Alpha */;
+			targetProxy = 7A4103141E80783A00B0F941 /* PBXContainerItemProxy */;
+		};
+		7A4103201E80783A00B0F941 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7A4102FE1E80783900B0F941 /* Easy Recipeasy Alpha */;
+			targetProxy = 7A41031F1E80783A00B0F941 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7A41030B1E80783A00B0F941 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A41030C1E80783A00B0F941 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		7A652C1E1E842D8900843DEF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A652C1F1E842D8900843DEF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7A4103251E80783A00B0F941 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7A4103261E80783A00B0F941 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7A4103281E80783A00B0F941 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 280A3B5950D8551B2B5DCAEE /* Pods-Easy Recipeasy Alpha.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 982L5Q3UPX;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Easy\\ Recipeasy\\ Alpha",
+					"$(PROJECT_DIR)/Easy\\ Recipeasy\\ Alpha",
+					"$(PROJECT_DIR)/Easy\\ Recipeasy\\ Alpha",
+					"$(PROJECT_DIR)/Easy\\ Recipeasy\\ Alpha",
+					"$(PROJECT_DIR)/Easy\\ Recipeasy\\ Alpha",
+					"$(PROJECT_DIR)/Easy\\ Recipeasy\\ Alpha",
+					"$(PROJECT_DIR)/Easy\\ Recipeasy\\ Alpha",
+					"$(PROJECT_DIR)/Easy\\ Recipeasy\\ Alpha",
+					"$(PROJECT_DIR)/Easy\\ Recipeasy\\ Alpha",
+					"$(PROJECT_DIR)/Easy\\ Recipeasy\\ Alpha",
+					"$(PROJECT_DIR)/Easy\\ Recipeasy\\ Alpha",
+					"$(PROJECT_DIR)/Easy\\ Recipeasy\\ Alpha",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Easy Recipeasy Alpha/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				NEWSETTING = "";
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "NehaSule.Easy-Recipeasy-Alpha";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		7A4103291E80783A00B0F941 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FBA97C99791FB2571B275E8 /* Pods-Easy Recipeasy Alpha.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 982L5Q3UPX;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Easy\\ Recipeasy\\ Alpha",
+					"$(PROJECT_DIR)/Easy\\ Recipeasy\\ Alpha",
+					"$(PROJECT_DIR)/Easy\\ Recipeasy\\ Alpha",
+					"$(PROJECT_DIR)/Easy\\ Recipeasy\\ Alpha",
+					"$(PROJECT_DIR)/Easy\\ Recipeasy\\ Alpha",
+					"$(PROJECT_DIR)/Easy\\ Recipeasy\\ Alpha",
+					"$(PROJECT_DIR)/Easy\\ Recipeasy\\ Alpha",
+					"$(PROJECT_DIR)/Easy\\ Recipeasy\\ Alpha",
+					"$(PROJECT_DIR)/Easy\\ Recipeasy\\ Alpha",
+					"$(PROJECT_DIR)/Easy\\ Recipeasy\\ Alpha",
+					"$(PROJECT_DIR)/Easy\\ Recipeasy\\ Alpha",
+					"$(PROJECT_DIR)/Easy\\ Recipeasy\\ Alpha",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Easy Recipeasy Alpha/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				NEWSETTING = "";
+				NEW_SETTING = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "NehaSule.Easy-Recipeasy-Alpha";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		7A41032B1E80783A00B0F941 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0E1AD5B530503EB7D386815 /* Pods-Easy Recipeasy AlphaTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 982L5Q3UPX;
+				INFOPLIST_FILE = "Easy Recipeasy AlphaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "University-of-Texas.Easy-Recipeasy-AlphaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Easy Recipeasy Alpha.app/Easy Recipeasy Alpha";
+			};
+			name = Debug;
+		};
+		7A41032C1E80783A00B0F941 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF0CB39DD5B4A6A64F702274 /* Pods-Easy Recipeasy AlphaTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 982L5Q3UPX;
+				INFOPLIST_FILE = "Easy Recipeasy AlphaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "University-of-Texas.Easy-Recipeasy-AlphaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Easy Recipeasy Alpha.app/Easy Recipeasy Alpha";
+			};
+			name = Release;
+		};
+		7A41032E1E80783A00B0F941 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 768560B826ABF83352231772 /* Pods-Easy Recipeasy AlphaUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 982L5Q3UPX;
+				INFOPLIST_FILE = "Easy Recipeasy AlphaUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "University-of-Texas.Easy-Recipeasy-AlphaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Easy Recipeasy Alpha";
+			};
+			name = Debug;
+		};
+		7A41032F1E80783A00B0F941 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAB7BEA5CE303F9B4B39FA2C /* Pods-Easy Recipeasy AlphaUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 982L5Q3UPX;
+				INFOPLIST_FILE = "Easy Recipeasy AlphaUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "University-of-Texas.Easy-Recipeasy-AlphaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Easy Recipeasy Alpha";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7A4102FA1E80783900B0F941 /* Build configuration list for PBXProject "Easy Recipeasy Alpha" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A4103251E80783A00B0F941 /* Debug */,
+				7A4103261E80783A00B0F941 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A4103271E80783A00B0F941 /* Build configuration list for PBXNativeTarget "Easy Recipeasy Alpha" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A4103281E80783A00B0F941 /* Debug */,
+				7A4103291E80783A00B0F941 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A41032A1E80783A00B0F941 /* Build configuration list for PBXNativeTarget "Easy Recipeasy AlphaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A41032B1E80783A00B0F941 /* Debug */,
+				7A41032C1E80783A00B0F941 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A41032D1E80783A00B0F941 /* Build configuration list for PBXNativeTarget "Easy Recipeasy AlphaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A41032E1E80783A00B0F941 /* Debug */,
+				7A41032F1E80783A00B0F941 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7AC605AF1EA5ACB900492102 /* Ingredients.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7AC605B01EA5ACB900492102 /* Ingredients.xcdatamodel */,
+			);
+			currentVersion = 7AC605B01EA5ACB900492102 /* Ingredients.xcdatamodel */;
+			path = Ingredients.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7A4102F71E80783900B0F941 /* Project object */;
+}
